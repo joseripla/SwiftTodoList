@@ -24,6 +24,13 @@
 			remoteGlobalIDString = 9328C7FE19CCBC2A009497F8;
 			remoteInfo = TestApp;
 		};
+		9393496419CD9D4800FEFE0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9328C7F719CCBC2A009497F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9328C7FE19CCBC2A009497F8;
+			remoteInfo = TodoList;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +68,8 @@
 		9328C7F619CCBC2A009497F8 = {
 			isa = PBXGroup;
 			children = (
-				9328C80119CCBC2A009497F8 /* TestApp */,
-				9328C81719CCBC2A009497F8 /* TestAppTests */,
+				9328C80119CCBC2A009497F8 /* TodoList */,
+				9328C81719CCBC2A009497F8 /* TodoListTests */,
 				9328C80019CCBC2A009497F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,7 +83,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9328C80119CCBC2A009497F8 /* TestApp */ = {
+		9328C80119CCBC2A009497F8 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
 				9328C80419CCBC2A009497F8 /* AppDelegate.swift */,
@@ -87,6 +94,7 @@
 				9328C80D19CCBC2A009497F8 /* LaunchScreen.xib */,
 				9328C80219CCBC2A009497F8 /* Supporting Files */,
 			);
+			name = TodoList;
 			path = TestApp;
 			sourceTree = "<group>";
 		};
@@ -98,12 +106,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9328C81719CCBC2A009497F8 /* TestAppTests */ = {
+		9328C81719CCBC2A009497F8 /* TodoListTests */ = {
 			isa = PBXGroup;
 			children = (
 				9328C81A19CCBC2A009497F8 /* TestAppTests.swift */,
 				9328C81819CCBC2A009497F8 /* Supporting Files */,
 			);
+			name = TodoListTests;
 			path = TestAppTests;
 			sourceTree = "<group>";
 		};
@@ -147,6 +156,7 @@
 			);
 			dependencies = (
 				9328C81619CCBC2A009497F8 /* PBXTargetDependency */,
+				9393496519CD9D4800FEFE0D /* PBXTargetDependency */,
 			);
 			name = TodoListTests;
 			productName = TestAppTests;
@@ -237,6 +247,11 @@
 			target = 9328C7FE19CCBC2A009497F8 /* TodoList */;
 			targetProxy = 9328C81519CCBC2A009497F8 /* PBXContainerItemProxy */;
 		};
+		9393496519CD9D4800FEFE0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9328C7FE19CCBC2A009497F8 /* TodoList */;
+			targetProxy = 9393496419CD9D4800FEFE0D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -295,10 +310,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos8.0;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -332,7 +348,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos8.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -373,7 +390,7 @@
 				INFOPLIST_FILE = TestAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = TodoListTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoList.app/TodoList";
 			};
 			name = Debug;
 		};
@@ -388,7 +405,7 @@
 				INFOPLIST_FILE = TestAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = TodoListTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoList.app/TodoList";
 			};
 			name = Release;
 		};

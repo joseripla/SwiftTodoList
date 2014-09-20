@@ -4,16 +4,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Fruits-->
+        <!--TodoList-->
         <scene sceneID="XOT-If-nU6">
             <objects>
-                <tableViewController id="bJY-1g-Eed" customClass="myTableViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="bJY-1g-Eed" customClass="myTableViewController" customModule="TodoList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jIw-Zi-sjN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="UxQ-QS-fQV">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" id="UxQ-QS-fQV">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UxQ-QS-fQV" id="yB2-mJ-u3A">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -25,7 +25,7 @@
                             <outlet property="delegate" destination="bJY-1g-Eed" id="OyU-g5-Q0E"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Fruits" id="1yl-jz-1oJ"/>
+                    <navigationItem key="navigationItem" title="TodoList" id="1yl-jz-1oJ"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
